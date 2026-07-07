@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">个人照片占位图</title>
+  <desc id="desc">替换为真实个人照片后，主页左侧会展示新图片。</desc>
+  <rect width="800" height="600" fill="#e7ddcc"/>
+  <rect x="64" y="64" width="672" height="472" rx="36" fill="#fff7ea" stroke="#d5c5ad" stroke-width="4"/>
+  <circle cx="400" cy="246" r="86" fill="#2d6f7f"/>
+  <path d="M232 478c26-98 91-148 168-148s142 50 168 148" fill="#253630"/>
+  <path d="M118 118h160" stroke="#c99a3e" stroke-width="18" stroke-linecap="round"/>
+  <path d="M522 118h160" stroke="#c99a3e" stroke-width="18" stroke-linecap="round"/>
+</svg>

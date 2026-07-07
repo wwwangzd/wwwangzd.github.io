@@ -1,0 +1,79 @@
+---
+import { profile } from "../content/profile";
+import "../styles/global.css";
+
+const currentYear = new Date().getFullYear();
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={profile.bio} />
+    <title>{profile.name} | 个人主页</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <aside class="profile-card" aria-label="个人信息">
+        <img class="avatar" src={withBase(profile.avatar)} alt={`${profile.name} 的照片`} />
+        <h1>{profile.name}</h1>
+        <p class="title">{profile.title}</p>
+        <p class="bio">{profile.bio}</p>
+
+        <ul class="contact-list" aria-label="联系方式">
+          <li><a href={`mailto:${profile.email}`}>{profile.email}</a></li>
+          <li><span>{profile.location}</span></li>
+        </ul>
+
+        <ul class="link-list" aria-label="外部链接">
+          {
+            profile.links.map((link) => (
+              <li>
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  {link.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        {
+          profile.sections.map((section) => (
+            <section class="section-block" id={section.id} aria-labelledby={`${section.id}-title`}>
+              <h2 id={`${section.id}-title`}>{section.title}</h2>
+              {section.items ? (
+                <div class="timeline">
+                  {section.items.map((item) => (
+                    <article class="timeline-item">
+                      <h3>{item.title}</h3>
+                      <p class="meta">{item.meta}</p>
+                      <p>{item.body}</p>
+                    </article>
+                  ))}
+                </div>
+              ) : (
+                <>
+                  <p>{section.body}</p>
+                  {section.list && (
+                    <ul>
+                      {section.list.map((item) => <li>{item}</li>)}
+                    </ul>
+                  )}
+                </>
+              )}
+            </section>
+          ))
+        }
+
+        <footer class="footer">
+          © {currentYear} {profile.name}.
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
