@@ -5,24 +5,134 @@ interface Props {
   previewParagraphs?: number;
 }
 
+type TextSegment = {
+  type: "text";
+  text: string;
+};
+
+type LinkSegment = {
+  type: "link";
+  text: string;
+  href: string;
+  external: boolean;
+};
+
+type Segment = TextSegment | LinkSegment;
+
 const { text, collapsible = false, previewParagraphs = 1 } = Astro.props;
 const paragraphs = String(text)
   .split(/\n\s*\n/)
   .map((paragraph) => paragraph.trim())
   .filter(Boolean);
 const shouldCollapse = collapsible && paragraphs.length > previewParagraphs;
-const preview = shouldCollapse ? paragraphs.slice(0, previewParagraphs) : paragraphs;
+const preview = shouldCollapse
+  ? paragraphs.slice(0, previewParagraphs)
+  : paragraphs;
 const hidden = shouldCollapse ? paragraphs.slice(previewParagraphs) : [];
+const baseUrl = import.meta.env.BASE_URL;
+const linkPattern = /\[([^\]]+)\]\(([^)\s]+)\)/g;
+const safeProtocols = ["http:", "https:", "mailto:"];
+
+const withBase = (path: string) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+
+const isSafeHref = (href: string) => {
+  if (href.startsWith("/") || href.startsWith("#")) {
+    return true;
+  }
+
+  try {
+    return safeProtocols.includes(new URL(href).protocol);
+  } catch {
+    return false;
+  }
+};
+
+const resolveHref = (href: string) =>
+  href.startsWith("/") ? withBase(href) : href;
+
+const parseLinks = (paragraph: string): Segment[] => {
+  const segments: Segment[] = [];
+  let lastIndex = 0;
+
+  for (const match of paragraph.matchAll(linkPattern)) {
+    const [raw, linkText, href] = match;
+    const start = match.index ?? 0;
+
+    if (start > lastIndex) {
+      segments.push({
+        type: "text",
+        text: paragraph.slice(lastIndex, start),
+      });
+    }
+
+    if (isSafeHref(href)) {
+      segments.push({
+        type: "link",
+        text: linkText,
+        href: resolveHref(href),
+        external: href.startsWith("http://") || href.startsWith("https://"),
+      });
+    } else {
+      segments.push({ type: "text", text: raw });
+    }
+
+    lastIndex = start + raw.length;
+  }
+
+  if (lastIndex < paragraph.length) {
+    segments.push({
+      type: "text",
+      text: paragraph.slice(lastIndex),
+    });
+  }
+
+  return segments;
+};
+
+const previewSegments = preview.map(parseLinks);
+const hiddenSegments = hidden.map(parseLinks);
 ---
 
-{preview.map((paragraph) => <p>{paragraph}</p>)}
+{
+  previewSegments.map((segments) => (
+    <p>
+      {segments.map((segment) =>
+        segment.type === "link" ? (
+          <a
+            href={segment.href}
+            target={segment.external ? "_blank" : undefined}
+            rel={segment.external ? "noreferrer" : undefined}
+          >
+            {segment.text}
+          </a>
+        ) : (
+          segment.text
+        ),
+      )}
+    </p>
+  ))
+}
 
 {
   shouldCollapse && (
     <details class="text-more">
       <summary>展开更多</summary>
-      {hidden.map((paragraph) => (
-        <p>{paragraph}</p>
+      {hiddenSegments.map((segments) => (
+        <p>
+          {segments.map((segment) =>
+            segment.type === "link" ? (
+              <a
+                href={segment.href}
+                target={segment.external ? "_blank" : undefined}
+                rel={segment.external ? "noreferrer" : undefined}
+              >
+                {segment.text}
+              </a>
+            ) : (
+              segment.text
+            ),
+          )}
+        </p>
       ))}
     </details>
   )
