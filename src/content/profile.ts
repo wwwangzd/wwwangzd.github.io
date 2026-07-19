@@ -7,7 +7,7 @@ export interface ProfileLink {
 export interface ProfileItem {
   icon?: string;
   title: string;
-  meta: string;
+  meta?: string;
   body: string;
   collapsible?: boolean;
 }
