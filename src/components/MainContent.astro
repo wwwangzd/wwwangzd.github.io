@@ -1,0 +1,127 @@
+---
+import TextBlock from "./TextBlock.astro";
+
+interface Props {
+  profile: typeof import("../content/profile").profile;
+}
+
+const { profile } = Astro.props;
+const currentYear = new Date().getFullYear();
+const baseUrl = import.meta.env.BASE_URL;
+const withBase = (path: string) => `${baseUrl}${path.replace(/^\/+/, "")}`;
+---
+
+<main class="main-content">
+  {profile.sections.map((section) => (
+    <section
+      class="content-section"
+      id={section.id}
+      aria-labelledby={`${section.id}-title`}
+    >
+      <h2 id={`${section.id}-title`}>{section.title}</h2>
+      {section.items ? (
+        <>
+          {section.items.map((item) => (
+            <article class="entry-item">
+              <div
+                class={item.icon ? "entry-heading has-icon" : "entry-heading"}
+              >
+                {item.icon && (
+                  <img
+                    class="entry-icon"
+                    src={withBase(item.icon)}
+                    alt=""
+                    loading="lazy"
+                  />
+                )}
+                <div>
+                  <h3>{item.title}</h3>
+                  <p class="meta">{item.meta}</p>
+                </div>
+              </div>
+              <TextBlock text={item.body} />
+            </article>
+          ))}
+        </>
+      ) : (
+        <>
+          {section.body && (
+            <TextBlock text={section.body} collapsible={section.collapsible} />
+          )}
+        </>
+      )}
+    </section>
+  ))}
+
+  <footer class="footer">
+    © {currentYear} {profile.nickname}.
+  </footer>
+</main>
+
+<style>
+  .main-content {
+    max-width: 760px;
+  }
+
+  .content-section {
+    margin-bottom: 50px;
+    scroll-margin-top: 24px;
+  }
+
+  h2 {
+    margin: 0 0 14px;
+    font-size: 1.45rem;
+  }
+
+  h3 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+  }
+
+  .entry-item {
+    margin-bottom: 18px;
+  }
+
+  .entry-heading.has-icon {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 12px;
+  }
+
+  .entry-icon {
+    display: block;
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+  }
+
+  .meta {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 4px;
+  }
+
+  .footer {
+    color: var(--muted);
+    margin-top: 24px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 760px) {
+    .content-section {
+      margin-bottom: 42px;
+    }
+
+    .entry-heading.has-icon {
+      grid-template-columns: 42px minmax(0, 1fr);
+      gap: 12px;
+    }
+
+    .entry-icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+</style>

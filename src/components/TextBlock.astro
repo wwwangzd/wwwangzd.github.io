@@ -1,0 +1,45 @@
+---
+interface Props {
+  text: string;
+  collapsible?: boolean;
+  previewParagraphs?: number;
+}
+
+const { text, collapsible = false, previewParagraphs = 1 } = Astro.props;
+const paragraphs = String(text)
+  .split(/\n\s*\n/)
+  .map((paragraph) => paragraph.trim())
+  .filter(Boolean);
+const shouldCollapse = collapsible && paragraphs.length > previewParagraphs;
+const preview = shouldCollapse ? paragraphs.slice(0, previewParagraphs) : paragraphs;
+const hidden = shouldCollapse ? paragraphs.slice(previewParagraphs) : [];
+---
+
+{preview.map((paragraph) => <p>{paragraph}</p>)}
+
+{
+  shouldCollapse && (
+    <details class="text-more">
+      <summary>展开更多</summary>
+      {hidden.map((paragraph) => (
+        <p>{paragraph}</p>
+      ))}
+    </details>
+  )
+}
+
+<style>
+  p {
+    margin: 0 0 12px;
+  }
+
+  .text-more summary {
+    color: var(--link);
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .text-more summary:hover {
+    text-decoration: underline;
+  }
+</style>
