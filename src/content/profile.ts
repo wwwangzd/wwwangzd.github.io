@@ -48,7 +48,7 @@ export const profile: Profile = {
       id: "begin",
       title: "开头介绍",
       collapsible: true,
-      body: `搭建这个主页，除了更详细介绍下自己，另外是想记录和分享一下自己的看法和总结。
+      body: `搭建这个主页，除了介绍下自己，另外是想记录和分享一下自己的看法。
 
       想起 2021 年刚入学时还在抱着教材和论坛在摸索中慢慢搭建起自己的计算机基础和工程体系。
 
@@ -56,7 +56,7 @@ export const profile: Profile = {
 
       2023-2024 年其实经历了很多的发展，不仅是 LLM 本身，还有围绕 LLM 通过协议、编排和外挂去强化其能力，然而主流还是对话形式，我在下半年的实习中多半时间也还是在古法编程。
 
-      2025 年又是一个关键的转折点，以 Coding Agent 为代表掀起了变革，开始以 Agent 去思考、组织和建设，我逐渐适应 Vibe Coding 模式，兴趣驱动去学习 LLM 技术发展和一写日常的工作流沉淀。
+      2025 年又是一个关键的转折点，以 Coding Agent 为代表掀起了变革，开始以 Agent 去思考、组织和建设，我逐渐适应 Vibe Coding 模式，兴趣驱动去学习 LLM 技术发展和做一些日常的工作流沉淀。
 
       2026 年至今看过来仍旧是围绕 Agent 的舞台，底层关注如何让 Agent 能力更强，上层也开始把 Agent 推向不同的任务和领域。
 
@@ -98,11 +98,11 @@ export const profile: Profile = {
         {
           title: "字节跳动 / Data-中国交易与广告-自助服务 / AI Agent 开发",
           meta: "2026.05 - 至今",
-          body: `基于 Harness 架构，面向商业化 Agent 场景，提供一站式 Agent 托管平台和接入能力，提供 Agent 从创建到测试、发布、实验和评测全链路支持以及资产管理和接入能力：
+          body: `基于 Harness 架构，面向商业化 Agent 场景，提供一站式 Agent 托管平台和接入能力，提供 Agent 从创建到测试、发布和评测全链路支持以及资产管理和接入能力：
 
           1. 负责平台稳定性建设，分 Agent 侧和平台侧的全闭环观测监控，提供可观测性接入与报警监控治理；
 
-          2. 围绕需求澄清、设计、开发、测试和验收全链路，设计一套自动化 Skill 工作流和工作区规范，实现需求的自动实现验证，以及知识与资产沉淀。
+          2. 围绕需求澄清、设计、开发、测试和验收全链路，设计一套自动化 Skill 工作流和工作区规范，实现需求的闭环实现与验证，以及知识与资产沉淀。
 
           目前正在参与一项保密项目的研发工作...
           `,
@@ -146,7 +146,7 @@ export const profile: Profile = {
 
           2. 基于华为昇腾环境完成对电网模型服务的迁移验证与部署工作，适配来自 PyTorch、Paddle、ONNX Runtime、Ollama 等不同框架和环境的服务；
 
-          3. [基于迁移工作沉淀了一套 Skill 自动化流](https://github.com/wwwangzd/LLM-Tools/tree/main/model-move)，计划整理开发一个自动化迁移 Agent 助手。
+          3. [基于迁移工作沉淀了一套 Skill 自动化流](https://github.com/wwwangzd/LLM-Tools/tree/main/model-move)，这里后续计划开发一个自动化迁移 Agent 助手。
           `,
         },
       ],
@@ -156,15 +156,13 @@ export const profile: Profile = {
       title: "AI 工具",
       body: `记录我常用和自建的 AI 产品和工具：
       
-      1. 通用 Agent：豆包、Workbuddy
+      1. 通用 Agent 工具：豆包、Workbuddy
 
-      2. 编码 Agent：Codex、Trae
+      2. Coding Agent 工具：Codex、Trae
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
       4. 需求开发测试自动化工作流和 wiki 知识库：待同步
-
-      5. 一些看法：...
       `,
     },
     {
@@ -181,7 +179,9 @@ export const profile: Profile = {
           title: "AI 学习",
           body: `1. [深度学习](https://my.feishu.cn/docx/Mf8bdaSmeorOGsxtIbkc31MbnLd)
 
-          2. [大模型学习](https://my.feishu.cn/docx/SlzgdGMvUo0a35x8Huac1gDvnod)
+          2. [大模型基础](https://my.feishu.cn/docx/SlzgdGMvUo0a35x8Huac1gDvnod)
+
+          3. AI Agent...
           `,
         },
         {
