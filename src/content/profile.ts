@@ -102,7 +102,7 @@ export const profile: Profile = {
 
           2. 围绕需求澄清、设计、开发、测试和验收全链路，设计一套自动化 Skill 工作流和工作区规范，实现需求的闭环实现与验证，以及知识与资产沉淀。
 
-          目前正在参与一项保密项目的研发工作...
+          目前正在参与一项 AI-Native 保密 Agent 项目的研发工作...
           `,
         },
         {
@@ -154,9 +154,9 @@ export const profile: Profile = {
       title: "AI 工具",
       body: `记录我常用和自建的 AI 产品和工具：
       
-      1. 通用 Agent 工具：豆包、WorkBuddy
+      1. 通用 Agent 工具：豆包（日常对话问答）、WorkBuddy（日常办公工作流）
 
-      2. Coding Agent 工具：Codex、Trae
+      2. Coding Agent 工具：Codex（懂得都懂，行业标杆）、Trae（交互和功能真心做的挺好的，前提是我还能用 gpt/claude 模型）、Copilot（单纯用来对话解答）
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
