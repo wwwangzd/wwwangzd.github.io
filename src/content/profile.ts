@@ -40,7 +40,6 @@ export const profile: Profile = {
       href: "mailto:wwwangzd@foxmail.com",
     },
     { type: "link", label: "GitHub", href: "https://github.com/wwwangzd" },
-    { type: "link", label: "Resume", href: "/files/resume.pdf" },
   ],
   sections: [
     {
