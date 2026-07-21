@@ -35,7 +35,7 @@ const withBase = (path: string) => `${baseUrl}${path.replace(/^\/+/, "")}`;
                   />
                 )}
                 <div>
-                  <h3>{item.title}</h3>
+                  {item.title && <h3>{item.title}</h3>}
                   {item.meta && <p class="meta">{item.meta}</p>}
                 </div>
               </div>

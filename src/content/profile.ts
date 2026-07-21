@@ -6,10 +6,9 @@ export interface ProfileLink {
 
 export interface ProfileItem {
   icon?: string;
-  title: string;
+  title?: string;
   meta?: string;
   body: string;
-  collapsible?: boolean;
 }
 
 export interface ProfileSection {
@@ -132,7 +131,7 @@ export const profile: Profile = {
 
           1. 搭建 pipeline 构建 Completion/FIM 数据集；
 
-          2. 基于混合数据集开展全量 SFT 训练，针对过生成和重复续写问题设计 FIM-only + stop-token 微调；
+          2. 基于数据集开展全量 SFT 训练，针对过生成和重复续写问题设计 FIM-only + stop-token 微调；
 
           3. 尝试利用 AI 构造正负例数据开展 DPO 偏好对齐训练与验证。
           `,
@@ -152,11 +151,11 @@ export const profile: Profile = {
       ],
     },
     {
-      id: "ai-share",
+      id: "ai-use",
       title: "AI 工具",
       body: `记录我常用和自建的 AI 产品和工具：
       
-      1. 通用 Agent 工具：豆包、Workbuddy
+      1. 通用 Agent 工具：豆包、WorkBuddy
 
       2. Coding Agent 工具：Codex、Trae
 
@@ -166,18 +165,20 @@ export const profile: Profile = {
       `,
     },
     {
-      id: "ai-free",
+      id: "ai-share",
       title: "AI 分享",
       body: "记录分享我关于 AI 的学习总结和想法思考：",
       items: [
         {
-          title: "AI 思考",
-          body: `待完善...
+          body: `[自己的一点思考：](https://my.feishu.cn/docx/WW2RdaZ4noJkrSxVevCcBKBpnMh)
+
+          1. CLI 化
           `,
         },
         {
-          title: "AI 学习",
-          body: `1. [深度学习](https://my.feishu.cn/docx/Mf8bdaSmeorOGsxtIbkc31MbnLd)
+          body: `整理的一些学习笔记：
+          
+          1. [深度学习](https://my.feishu.cn/docx/Mf8bdaSmeorOGsxtIbkc31MbnLd)
 
           2. [大模型基础](https://my.feishu.cn/docx/SlzgdGMvUo0a35x8Huac1gDvnod)
 
@@ -185,8 +186,9 @@ export const profile: Profile = {
           `,
         },
         {
-          title: "源码分析",
-          body: `1. [Claude Code 源码分析](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
+          body: `一些源码分析记录
+          
+          1. [Claude Code 源码分析](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
 
           2. [Pi Agent 源码分析](https://my.feishu.cn/docx/HFqVdIRFVom8qFxBVDkcipTSn0d)
 
