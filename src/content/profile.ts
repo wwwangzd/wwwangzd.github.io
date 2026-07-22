@@ -156,11 +156,11 @@ export const profile: Profile = {
       
       1. 通用 Agent 工具：豆包（日常对话问答）、WorkBuddy（日常办公工作流）
 
-      2. Coding Agent 工具：Codex（懂得都懂，行业标杆）、Trae（交互和功能真心做的挺好的，前提是我还能用 gpt/claude 模型）、Copilot（单纯用来对话解答）
+      2. Coding Agent 工具：Codex（懂得都懂，行业标杆）、Trae（交互和功能真心做的挺好的，当然前提是我还能用 gpt/claude 模型）、Copilot（单纯用来对话解答）
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
-      4. 需求开发测试自动化工作流和 wiki 知识库：待同步
+      4. 工作区、需求开发测试自动化工作流和 wiki 知识库：待同步
       `,
     },
     {
