@@ -181,9 +181,9 @@ export const profile: Profile = {
           
           1. [深度学习](https://my.feishu.cn/docx/Mf8bdaSmeorOGsxtIbkc31MbnLd)
 
-          2. [大模型基础](https://my.feishu.cn/docx/SlzgdGMvUo0a35x8Huac1gDvnod)
+          2. [大模型学习](https://my.feishu.cn/docx/SlzgdGMvUo0a35x8Huac1gDvnod)
 
-          3. AI Agent...
+          3. [Agent 学习](https://my.feishu.cn/docx/RQ0bdPy9LoOeA3xY0ZJcytsnnde)
           `,
         },
         {
