@@ -154,9 +154,9 @@ export const profile: Profile = {
       title: "AI 工具",
       body: `记录我常用和自建的 AI 产品和工具：
       
-      1. 通用 Agent 工具：豆包（日常对话问答）、WorkBuddy（日常办公工作流）
+      1. 通用 Agent 工具：豆包、WorkBuddy
 
-      2. Coding Agent 工具：Codex（懂得都懂，行业标杆）、Trae（交互和功能真心做的挺好的，当然前提是我还能用 gpt/claude 模型）、Copilot（单纯用来对话解答）
+      2. Coding Agent 工具：Codex、Trae、Copilot
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
@@ -187,7 +187,7 @@ export const profile: Profile = {
           `,
         },
         {
-          body: `一些源码分析记录
+          body: `一些源码分析记录：
           
           1. [Claude Code 源码分析](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
 
