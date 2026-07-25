@@ -149,6 +149,18 @@ export const profile: Profile = {
           3. [基于迁移工作沉淀了一套 Skill 自动化流](https://github.com/wwwangzd/LLM-Tools/tree/main/model-move)，这里后续计划开发一个自动化迁移 Agent 助手。
           `,
         },
+        {
+          title: "智能面试-简历解析",
+          meta: "2024.11 - 2025.01",
+          body: `基于 FastAPI 框架和 RoBERTa 模型的简历解析服务，实现从非结构化文档中实现关键信息的提取：
+
+          1. 负责信息提取算法的设计与实现，基于 Chinese-RoBERTa 预训练模型，分别构建微调文本分类模型与命名实体识别模型，用于简历信息归类以及关键信息识别；
+
+          2. 负责信息处理与对齐功能的设计与实现，基于正则化与经验化方法处理归类信息；
+
+          3. [重建为基于 OCR + LLM 链路的异步并发简历解析服务。](https://github.com/wwwangzd/Resume-Analysis)
+          `,
+        },
       ],
     },
     {
