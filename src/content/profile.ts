@@ -174,7 +174,7 @@ export const profile: Profile = {
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
-      4. 推荐 AI 工具：superpowers 的 systematic-debugging + test-driven-development + verification-before-completion、grill-me
+      4. 推荐 AI 工具：superpowers 的 system-debug + tdd + verify、grill-me
 
       5. 工作区、需求开发测试自动化工作流和 wiki 知识库：待同步
       `,
@@ -190,6 +190,10 @@ export const profile: Profile = {
           1. CLI 化
 
           2. 工作区
+
+          3. Agentic RL 与 Harness
+
+          4. 发挥大模型的检索能力
           `,
         },
         {
