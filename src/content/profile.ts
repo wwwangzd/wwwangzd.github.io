@@ -94,7 +94,7 @@ export const profile: Profile = {
       title: "工作经历",
       items: [
         {
-          title: "字节跳动 / Data-中国交易与广告-自助服务 / AI Agent 开发",
+          title: "字节跳动 / Data-中国交易与广告-自助服务 / Agent 全栈开发",
           meta: "2026.05 - 至今",
           body: `基于 Harness 架构，面向商业化场景打造的一站式 Agent 托管平台，提供快便捷、可观测和可审计的全链路 Agent 服务：
 
@@ -174,9 +174,9 @@ export const profile: Profile = {
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
-      4. 推荐 AI 工具：superpowers 的 system-debug + tdd + verify、grill-me
+      4. [工作区协作工作流（工作区维护、需求开发测试、知识库）](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
 
-      5. 工作区、需求开发测试自动化工作流和 wiki 知识库：待同步
+      5. 推荐 AI 工具：superpowers 的 system-debug + tdd + verify、grill-me
       `,
     },
     {
@@ -189,11 +189,11 @@ export const profile: Profile = {
 
           1. CLI 化
 
-          2. 工作区
+          2. 工作区协作
 
-          3. Agentic RL 与 Harness
+          3. 发挥大模型的检索能力
 
-          4. 发挥大模型的检索能力
+          4. 同步训练与异步建设的矛盾
           `,
         },
         {
@@ -213,7 +213,7 @@ export const profile: Profile = {
 
           2. [Pi Agent 源码分析](https://my.feishu.cn/docx/HFqVdIRFVom8qFxBVDkcipTSn0d)
 
-          3. Codex 源码分析
+          3. Codex 源码分析：上下文压缩设计
           `,
         },
       ],
