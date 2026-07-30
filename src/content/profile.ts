@@ -174,9 +174,9 @@ export const profile: Profile = {
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
-      4. [工作区协作工作流（工作区维护、需求开发测试、知识库）](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
+      4. [工作区协作工作流：工作区维护、需求开发测试、知识库](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
 
-      5. 推荐 AI 工具：superpowers 的 system-debug + tdd + verify、grill-me
+      5. Vibe Coding 记录：简历解析工具、简单 RAG 检索
       `,
     },
     {
