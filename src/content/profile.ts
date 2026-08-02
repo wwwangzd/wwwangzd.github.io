@@ -187,13 +187,15 @@ export const profile: Profile = {
         {
           body: `[自己的一点思考：](https://my.feishu.cn/docx/WW2RdaZ4noJkrSxVevCcBKBpnMh)
 
-          1. CLI 化
+          1. CLI 趋势
 
-          2. 工作区协作
+          2. Managed Agents
 
-          3. 发挥大模型的检索能力
+          3. 工作区协作
 
-          4. 同步训练与异步建设的矛盾
+          4. 发挥大模型的检索能力
+
+          5. 矛盾：同步训练与异步工程
           `,
         },
         {
