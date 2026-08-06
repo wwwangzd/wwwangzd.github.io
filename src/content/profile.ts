@@ -32,7 +32,7 @@ export const profile: Profile = {
   name: "王昭栋",
   nickname: "wwwangzd",
   avatar: "/images/bio.jpg",
-  bio: "AI 应用开发、AI Agent",
+  bio: "AI Agent 全栈",
   links: [
     {
       type: "email",
@@ -104,7 +104,7 @@ export const profile: Profile = {
 
           围绕需求澄清、设计、开发、测试和验收链路，设计一套自动化 Skill 工作流和工作区规范，实现需求的闭环实现与验证，以及知识与资产沉淀。
 
-          目前正在参与一项 AI-Native 保密项目的全栈研发工作...
+          近期：参与一项 ToB 商业化 AI-Native 项目的封闭全栈研发，负责其中 Agent、Skill 及对话能力横向建设。
           `,
         },
         {
