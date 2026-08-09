@@ -32,7 +32,7 @@ export const profile: Profile = {
   name: "王昭栋",
   nickname: "wwwangzd",
   avatar: "/images/bio.jpg",
-  bio: "AI Agent 全栈",
+  bio: "AI Agent",
   links: [
     {
       type: "email",
@@ -71,7 +71,7 @@ export const profile: Profile = {
           meta: "2025.09 - 至今",
           body: `研究生期间主要是跟随导师和实验室开展工程项目，包括智能面试、多源展示、模型迁移等。
 
-          其余时间基于兴趣比较全面接触了深度学习基础，大模型基础以及 Agent 工程，并保持对大模型发展的关注与实践。
+          期间基于兴趣比较全面接触了深度学习基础，大模型基础以及 AI Agent，并保持对大模型发展的关注与实践。
           `,
         },
         {
@@ -175,8 +175,6 @@ export const profile: Profile = {
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
 
       4. [工作区协作工作流：工作区维护、需求开发测试、知识库](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
-
-      5. Vibe Coding 记录：简历解析工具、简单 RAG 检索
       `,
     },
     {
