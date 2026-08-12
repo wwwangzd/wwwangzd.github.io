@@ -185,15 +185,11 @@ export const profile: Profile = {
         {
           body: `[自己的一点思考：](https://my.feishu.cn/docx/WW2RdaZ4noJkrSxVevCcBKBpnMh)
 
-          1. CLI 趋势
+          1. Agent 产品与形态趋势
 
-          2. Managed Agents
+          2. Agent 的开发实践与应用设计
 
-          3. 工作区协作
-
-          4. 发挥大模型的检索能力
-
-          5. 矛盾：同步训练与异步工程
+          3. 模型能力与 Agent 工程方法
           `,
         },
         {
