@@ -62,6 +62,16 @@ export const profile: Profile = {
       `,
     },
     {
+      id: "latest",
+      title: "最近",
+      body: `1. 参与项目的 RealTime 服务设计与搭建及整体功能完善。
+      
+      2. 学习 Pi Agent 及 DeepSeek Harness 优秀 Agent Harness 案例。
+
+      3. 学习并运用 LoopX 搭建具备长程任务的数字员工。
+      `,
+    },
+    {
       id: "education",
       title: "教育背景",
       items: [
