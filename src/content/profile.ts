@@ -104,7 +104,7 @@ export const profile: Profile = {
       title: "工作经历",
       items: [
         {
-          title: "字节跳动 / Data-中国交易与广告-自助服务 / Agent 全栈开发",
+          title: "字节跳动 / Data-中国交易与广告-自助服务 / Agent 全栈",
           meta: "2026.05 - 至今",
           body: `基于 Harness 架构，面向商业化场景打造的一站式 Agent 托管平台，划分控制面、运行时、数据层和平台生态，提供 Agent 全生命周期服务（可以理解为 Managed Agents 平台）：
 
