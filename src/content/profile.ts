@@ -51,9 +51,9 @@ export const profile: Profile = {
     {
       id: "latest",
       title: "最近",
-      body: `1. 学习 Pi Agent 等优秀 Agent Harness 案例及 AI Agent 架构。
+      body: `1. 学习业界 AI Agent 产品和应用实践设计和架构，延伸业务思考和应用场景探索。
 
-      2. 摸索构建具备长程任务能力的自动化流程和数字员工实践。
+      2. 探索 AI Native 背景下组织协作方式和个人工作方式的变化，尝试构建个人和团队的 AI 工作流和协作模式。
       `,
     },
     {
@@ -93,15 +93,15 @@ export const profile: Profile = {
           meta: "2026.05 - 至今",
           body: `Agent Foundry：基于 Harness 架构，面向商业化场景打造的一站式 Agent 托管平台，划分控制面、运行时、数据层和平台生态，提供 Agent 全生命周期服务（可以理解为 Managed Agents 平台）：
 
-          1. 参与平台整体设计与建设，完成 Agent 能力和资产管理建设，设计 CLI 工具提供可接入能力；
+          1. 参与平台整体设计与建设，完成 Agent 构建能力和资产管理建设，设计 CLI 工具提供可接入能力；
 
           2. 负责平台可观测与稳定性建设，分 Agent 侧和平台侧构建闭环观测监控体系，提供观测支持与监控治理。
 
-          巨量工作台：基于 Agentic AI 能力，为广告主提供的一站式 AI 智能营销与经营工作台，划分客户端、服务端、运行时主体架构，担任从零开始的全栈研发工作：
+          巨量 AI 工作台：基于 Agentic AI 能力，为广告主提供的一站式 AI 智能营销与经营工作台，划分客户端、服务端、运行时主体架构，担任从零开始的全栈研发工作：
           
-          1. 参与 Agent 基础能力建设，负责 Agent、Skill/Tool、知识库的全生命周期能力支持；
+          1. 参与 Agent 基础架构和能力建设，负责技能、工具和知识库的全生命周期能力支持；
           
-          2. 参与 Agent 对话能力建设，负责对话协议及 RealTime 实时事件推送能力。
+          2. 参与 Agent 对话能力建设，负责对话协议及 RealTime 实时事件推送架构设计实现。
 
           AI-Native 提效：围绕需求澄清、设计、开发、测试和验收链路，设计一套自动化 Skill 工作流和工作区规范，实现需求的闭环实现与验证，以及知识与资产沉淀。
           `,
@@ -204,7 +204,7 @@ export const profile: Profile = {
         {
           body: `一些源码分析记录：
           
-          1. [Claude Code 源码分析](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
+          1. [Claude Code 源码分析（整理中）](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
 
           2. [Pi Agent 源码分析](https://my.feishu.cn/docx/HFqVdIRFVom8qFxBVDkcipTSn0d)
 
