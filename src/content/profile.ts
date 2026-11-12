@@ -205,18 +205,14 @@ export const profile: Profile = {
           2. [大模型学习](https://my.feishu.cn/docx/SlzgdGMvUo0a35x8Huac1gDvnod)
 
           3. [Agent 学习](https://my.feishu.cn/docx/RQ0bdPy9LoOeA3xY0ZJcytsnnde)
-          `,
-        },
-        {
-          body: `一些源码分析记录：
-          
-          1. [Claude Code 源码分析（整理中）](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
 
-          2. [Pi Agent 源码分析](https://my.feishu.cn/docx/HFqVdIRFVom8qFxBVDkcipTSn0d)
+          4. [Claude Code 源码分析（整理中）](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
 
-          3. [Codex 源码分析](https://my.feishu.cn/docx/Ig98dy2UVoXNPTxWZSEczznznXe)
+          5. [Pi Agent 源码分析](https://my.feishu.cn/docx/HFqVdIRFVom8qFxBVDkcipTSn0d)
+
+          6. [Codex 源码分析](https://my.feishu.cn/docx/Ig98dy2UVoXNPTxWZSEczznznXe)
           `,
-        },
+        }
       ],
     },
   ],
