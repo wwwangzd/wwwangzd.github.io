@@ -51,7 +51,7 @@ export const profile: Profile = {
     {
       id: "latest",
       title: "最近",
-      body: `1. 学习业界 AI Agent 产品和应用实践设计和架构，延伸业务思考和应用场景探索。
+      body: `1. 学习业界 AI Agent 产品和应用实践设计和架构，延伸业务思考和应用场景探索。最近主要在探索自主 / 托管 Agent 整体思想和架构设计与实现。
 
       2. 探索 AI Native 背景下组织协作方式和个人工作方式的变化，尝试构建个人和团队的 AI 工作流和协作模式。
       `,
@@ -102,8 +102,6 @@ export const profile: Profile = {
           1. 参与 Agent 基础架构和能力建设，负责技能、工具和知识库的全生命周期能力支持；
           
           2. 参与 Agent 对话能力建设，负责对话协议及 RealTime 实时事件推送架构设计实现。
-
-          AI-Native 提效：围绕需求澄清、设计、开发、测试和验收链路，设计一套自动化 Skill 工作流和工作区规范，实现需求的闭环实现与验证，以及知识与资产沉淀。
           `,
         },
         {
@@ -172,8 +170,6 @@ export const profile: Profile = {
       2. Coding Agent 工具：Codex、Trae、Copilot
 
       3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
-
-      4. [工作区协作工作流：工作区维护、需求开发测试、知识库沉淀](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
       `,
     },
     {
@@ -189,6 +185,16 @@ export const profile: Profile = {
           2. Agent 的开发实践与应用设计
 
           3. 模型能力与 Agent 工程方法
+          `,
+        },
+        {
+          body: `[AI Native 实践：](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
+          
+          1. 工作区协作
+
+          2. 代码仓库维护
+
+          3. 埋点自迭代
           `,
         },
         {
