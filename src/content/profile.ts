@@ -89,7 +89,7 @@ export const profile: Profile = {
       title: "工作经历",
       items: [
         {
-          title: "字节跳动 / Data-中国交易与广告-自助服务 / Agent 全栈",
+          title: "字节跳动 / 巨量 AI 工作台 / AI Agent",
           meta: "2026.05 - 至今",
           body: `Agent Foundry：基于 Harness 架构，面向商业化场景打造的一站式 Agent 托管平台，划分控制面、运行时、数据层和平台生态，提供 Agent 全生命周期服务（可以理解为 Managed Agents 平台）：
 
@@ -127,7 +127,7 @@ export const profile: Profile = {
           meta: "2026.04 - 2026.05",
           body: `基于 Qwen2.5-Coder-1.5B 与华为昇腾环境（Ascend 910B3 + MindSpeed-LLM），面向 FIM 代码补全任务完成模型后训练实验，覆盖数据构造、SFT、DPO 和模型评测全链路：
 
-          1. 搭建 pipeline 构建 Completion/FIM 数据集；
+          1. 搭建 pipeline 构建 Completion / FIM 数据集；
 
           2. 基于数据集开展全量 SFT 训练，针对过生成和重复续写问题设计 FIM-only + stop-token 微调；
 
