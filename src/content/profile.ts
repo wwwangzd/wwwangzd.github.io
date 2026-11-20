@@ -123,6 +123,18 @@ export const profile: Profile = {
       title: "项目经历",
       items: [
         {
+          title: "AI Native 实践",
+          meta: "2026.07 - 2026.11",
+          body: `结合 AI Native 背景下的个人工作与团队协作场景，探索沉淀[可复用的工作流与组织协作经验](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)：
+
+          1. 构建工作区集中组织关联仓库和相关主题，配合可独立使用或自由组合的协作工作流，实现个人多仓库闭环联动；
+
+          2. 建设团队仓库知识体系与维护工作流，完善埋点上报规范与自迭代流程，配合规范巡检和 CI 检查推动团队共同协作。
+
+          3. 探索 AI 如何从按需响应的个人助手转变为主动协作的数字员工。
+          `,
+        },
+        {
           title: "Qwen2.5-Coder 代码补全",
           meta: "2026.04 - 2026.05",
           body: `基于 Qwen2.5-Coder-1.5B 与华为昇腾环境（Ascend 910B3 + MindSpeed-LLM），面向 FIM 代码补全任务完成模型后训练实验，覆盖数据构造、SFT、DPO 和模型评测全链路：
@@ -143,39 +155,15 @@ export const profile: Profile = {
 
           2. 基于华为昇腾环境完成对电网模型服务的迁移验证与部署工作，适配来自 PyTorch、Paddle、ONNX Runtime、Ollama 等不同框架和环境的服务；
 
-          3. [基于迁移工作沉淀了一套 Skill 自动化流](https://github.com/wwwangzd/LLM-Tools/tree/main/model-move)，这里后续计划开发一个自动化迁移 Agent 助手。
+          3. [基于迁移工作沉淀了一套 Skill 自动化流](https://github.com/wwwangzd/LLM-Tools/tree/main/model-move)。
           `,
-        },
-        {
-          title: "智能面试-简历解析",
-          meta: "2024.11 - 2025.01",
-          body: `基于 FastAPI 框架和 RoBERTa 模型的简历解析服务，实现从非结构化文档中实现关键信息的提取：
-
-          1. 负责信息提取算法的设计与实现，基于 Chinese-RoBERTa 预训练模型，分别构建微调文本分类模型与命名实体识别模型，用于简历信息归类以及关键信息识别；
-
-          2. 负责信息处理与对齐功能的设计与实现，基于正则化与经验化方法处理归类信息；
-
-          3. [重建为基于 OCR + LLM 链路的异步并发简历解析服务。](https://github.com/wwwangzd/Resume-Analysis)
-          `,
-        },
+        }
       ],
-    },
-    {
-      id: "ai-use",
-      title: "AI 工具",
-      body: `记录我常用和自建的 AI 产品和工具：
-      
-      1. 通用 Agent 工具：豆包、WorkBuddy
-
-      2. Coding Agent 工具：Codex、Trae、Copilot
-
-      3. [自用 AI 工具：整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
-      `,
     },
     {
       id: "ai-share",
       title: "AI 分享",
-      body: "记录分享我关于 AI 的学习总结和想法思考：",
+      body: "记录分享一些 AI 的想法思考和学习总结：",
       items: [
         {
           body: `[自己的一点思考：](https://my.feishu.cn/docx/WW2RdaZ4noJkrSxVevCcBKBpnMh)
@@ -188,29 +176,15 @@ export const profile: Profile = {
           `,
         },
         {
-          body: `[AI Native 实践：](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
+          body: `整理的一些学习记录：
+
+          1. [整理了日常使用的 prompt、skill 和 tool 工具](https://github.com/wwwangzd/LLM-Tools)
           
-          1. 工作区协作
-
-          2. 代码仓库维护
-
-          3. 埋点自迭代
-          `,
-        },
-        {
-          body: `整理的一些学习笔记：
-          
-          1. [深度学习](https://my.feishu.cn/docx/Mf8bdaSmeorOGsxtIbkc31MbnLd)
-
           2. [大模型学习](https://my.feishu.cn/docx/SlzgdGMvUo0a35x8Huac1gDvnod)
 
           3. [Agent 学习](https://my.feishu.cn/docx/RQ0bdPy9LoOeA3xY0ZJcytsnnde)
 
-          4. [Claude Code 源码分析（整理中）](https://my.feishu.cn/docx/L4n8d1gxPo5eJNxBMEmci02wnDv)
-
-          5. [Pi Agent 源码分析](https://my.feishu.cn/docx/HFqVdIRFVom8qFxBVDkcipTSn0d)
-
-          6. [Codex 源码分析](https://my.feishu.cn/docx/Ig98dy2UVoXNPTxWZSEczznznXe)
+          4. [源码分析](https://my.feishu.cn/drive/folder/MlZ2fyJvZlnfnbdxUqdcDM5ZnGi)
           `,
         }
       ],
