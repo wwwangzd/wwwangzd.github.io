@@ -125,11 +125,11 @@ export const profile: Profile = {
         {
           title: "AI Native 实践",
           meta: "2026.07 - 2026.11",
-          body: `结合 AI Native 背景下的个人工作与团队协作场景，探索沉淀[可复用的工作流与组织协作经验](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)：
+          body: `结合 AI Native 背景下的个人工作与团队协作场景，探索沉淀[可复用的工作流与组织协作经验：](https://my.feishu.cn/docx/Aj1HdUGBEojheFxomsVcDixynYc)
 
           1. 构建工作区集中组织关联仓库和相关主题，配合可独立使用或自由组合的协作工作流，实现个人多仓库闭环联动；
 
-          2. 建设团队仓库知识体系与维护工作流，完善埋点上报规范与自迭代流程，配合规范巡检和 CI 检查推动团队共同协作。
+          2. 建设团队仓库知识体系与维护工作流，完善埋点上报规范与自迭代流程，配合规范巡检和 CI 检查推动团队共同协作；
 
           3. 探索 AI 如何从按需响应的个人助手转变为主动协作的数字员工。
           `,
